@@ -7,7 +7,8 @@ var workList = [
 ];
 
 var count = 1;
-for (var i = 0; i < workList.length * 2; i++) {
+var i = 0;
+while (i < workList.length * 2) {
   if (i == workList.length) {
     i = -1;
     count++;
@@ -17,4 +18,5 @@ for (var i = 0; i < workList.length * 2; i++) {
   } else {
     console.log(workList[i]);
   }
+  i++;
 }

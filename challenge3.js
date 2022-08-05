@@ -7,14 +7,16 @@ var workList = [
 ];
 
 var count = 1;
-for (var i = 0; i < workList.length * 2; i++) {
-  if (i == workList.length) {
-    i = -1;
+var i = workList.length * 2;
+while (i >= 1) {
+  if (i == 5) {
+    i = 11;
     count++;
     if (count == 3) {
       break;
     }
   } else {
-    console.log(workList[i]);
+    console.log(workList[i-6]);
   }
+  i--;
 }
